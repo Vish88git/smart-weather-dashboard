@@ -1,5 +1,5 @@
 // Your API key from OpenWeatherMap
-const API_KEY = "eafa2862f9b8dbef92ab2e675d2e9a13";
+const API_KEY = "34a053cb6f5ccdfc1337e3141786b9de";
 const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 // Step 1: Grab all the HTML elements we need to update
