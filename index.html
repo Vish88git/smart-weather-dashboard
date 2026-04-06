@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Smart Weather Dashboard</title>
+        <link rel="stylesheet" href="css/style.css" />
+        </head>
+        <body>
+            <div class="container">
+                <!-- SEARCH SECTION -->
+                <div class="search-bar">
+                    <input type="text" id="cityInput" placeholder="Enter City Name..." />
+                    <button id="searchBtn">Search</button>
+                </div>
+
+                <!-- CURRENT WEATHER SECTION -->
+                <div class="weather-card" id="weatherCard">
+                    <h2 id="cityName">--</h2>
+                    <img id="weatherIcon" src="" alt="weather icon" />
+                    <p id="description">--</p>
+                    <h1 id="temperature">--°C</h1>  
+                    <div class="details">
+                        <span id="humidity">Humidity: --%</span>
+                        <span id="windSpeed">Wind: -- m/s </span>
+                    </div>
+                </div>
+                
+                <!-- ERROR MESSAGE -->
+                 <p class="error" id="errorMsg"></p>
+
+            </div>
+            <script src="js/app.js"></script>
+        </body>
+</html>
