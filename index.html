@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Smart Weather Dashboard</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-        
-        </head>
-        <body>
-            <div class="container">
-                <!-- SEARCH SECTION -->
-                <div class="search-bar">
-                    <input type="text" id="cityInput" placeholder="Enter City Name..." />
-                    <button id="searchBtn">Search</button>
-                </div>
 
-                <!-- LOCATION BUTTON - outside search-bar div -->
-                <button id="locationBtn">📍 Use My Location</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Weather Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
-                <!-- CURRENT WEATHER SECTION -->
-                <div class="weather-card" id="weatherCard">
-                    <h2 id="cityName">--</h2>
-                    <img id="weatherIcon" src="" alt="weather icon" />
-                    <p id="description">--</p>
-                    <h1 id="temperature">--°C</h1>  
-                    <div class="details">
-                        <span id="humidity">Humidity: --%</span>
-                        <span id="windSpeed">Wind: -- m/s </span>
-                    </div>
-                </div>
-                
-                <!-- ERROR MESSAGE -->
-                 <p class="error" id="errorMsg"></p>
+</head>
 
-                <!-- MAP -->
-                 <div id="map"></div>
+<body>
+    <div class="container">
+        <!-- SEARCH SECTION -->
+        <div class="search-bar">
+            <input type="text" id="cityInput" placeholder="Enter City Name..." />
+            <button id="searchBtn">Search</button>
+        </div>
 
+        <!-- LOCATION BUTTON - outside search-bar div -->
+        <button id="locationBtn">📍 Use My Location</button>
+
+        <!-- CURRENT WEATHER SECTION -->
+        <div class="weather-card" id="weatherCard">
+            <h2 id="cityName">--</h2>
+            <img id="weatherIcon" src="" alt="weather icon" />
+            <p id="description">--</p>
+            <h1 id="temperature">--°C</h1>
+            <div class="details">
+                <span id="humidity">Humidity: --%</span>
+                <span id="windSpeed">Wind: -- m/s </span>
             </div>
-            <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-            <script src="js/app.js"></script>
-        </body>
+        </div>
+
+        <!-- AIR QUALITY SECTION -->
+        <div class="aqi-card" id="aqiCard">
+            <h3>Air Quality Index</h3>
+            <div class="aqi-indicator">
+                <span class="aqi-badge" id="aqiBadge">--</span>
+                <span class="aqi-label" id="aqiLabel">--</span>
+            </div>
+            <p class="aqi-advice" id="aqiAdvice">--</p>
+            <div class="pollutants">
+                <span id="pm25">PM2.5: --</span>
+                <span id="pm10">PM10: --</span>
+                <span id="co">CO: --</span>
+            </div>
+        </div>
+
+        <!-- ERROR MESSAGE -->
+        <p class="error" id="errorMsg"></p>
+
+        <!-- MAP -->
+        <div id="map"></div>
+
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
 </html>
