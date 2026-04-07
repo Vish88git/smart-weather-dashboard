@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Smart Weather Dashboard</title>
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        
         </head>
         <body>
             <div class="container">
@@ -13,6 +15,9 @@
                     <input type="text" id="cityInput" placeholder="Enter City Name..." />
                     <button id="searchBtn">Search</button>
                 </div>
+
+                <!-- LOCATION BUTTON - outside search-bar div -->
+                <button id="locationBtn">📍 Use My Location</button>
 
                 <!-- CURRENT WEATHER SECTION -->
                 <div class="weather-card" id="weatherCard">
@@ -29,7 +34,11 @@
                 <!-- ERROR MESSAGE -->
                  <p class="error" id="errorMsg"></p>
 
+                <!-- MAP -->
+                 <div id="map"></div>
+
             </div>
+            <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
             <script src="js/app.js"></script>
         </body>
 </html>

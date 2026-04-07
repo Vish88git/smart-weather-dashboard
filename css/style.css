@@ -104,3 +104,28 @@ weather-card h2{
     font-size: 15px;
     min-height: 20px;
 }
+
+#locationBtn {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#locationBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  border-radius: 16px;
+  margin-top: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
