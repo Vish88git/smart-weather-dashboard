@@ -1,17 +1,30 @@
 # Smart Weather Dashboard
 
-A real-time weather dashboard built with vanilla JavaScript and the OpenWeatherMap API.
+A real-time weather and air quality dashboard built with 
+vanilla JavaScript, powered by multiple APIs.
+
+## Live Demo
+https://vish88git.github.io/smart-weather-dashboard
 
 ## Features
 - Search weather by city name
-- Displays temperature, humidity, wind speed
-- Live weather icons
+- Use My Location via GPS detection
+- Live temperature, humidity, wind speed
+- Real-time Air Quality Index (AQI 1-5)
+- Health advice based on pollution levels
+- PM2.5, PM10, CO pollutant readings
+- Interactive map with city pin
 - Error handling for invalid cities
+
+## APIs Used
+- OpenWeatherMap Current Weather API
+- OpenWeatherMap Air Pollution API
+- Leaflet.js + OpenStreetMap
 
 ## Tech Stack
 - HTML5, CSS3, Vanilla JavaScript
-- OpenWeatherMap API
-- Hosted via GitHub Pages
+- Geolocation API (browser native)
+- GitHub Pages (deployment)
 
 ## Setup
 1. Clone the repo
